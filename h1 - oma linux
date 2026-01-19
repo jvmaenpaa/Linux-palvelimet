@@ -15,4 +15,5 @@ Tehtävänä oli tarkoitus luoda uusi virtuaalikone ja asentaa siihen Linux Debi
 
 VirtualBoxin saa ladattua osoitteesta https://www.virtualbox.org/wiki/Downloads
 ja näytön vasemmassa reunassa näkyy ladattavissa olevat versiot (kuva alla). Kun olet valinnut omaan koneeseesi sopivan version klikkaa tätä ja lataus alkaa välittömästi. Lataus vie noin 10 minuuttia.
-![VirtualBox downloan page](images/VirtualBoxDownload.png)
+
+![VirtualBox download page](images/VirtualBoxDownload.png)

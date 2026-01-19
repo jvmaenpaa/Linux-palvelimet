@@ -17,3 +17,29 @@ VirtualBoxin saa ladattua osoitteesta https://www.virtualbox.org/wiki/Downloads
 ja näytön vasemmassa reunassa näkyy ladattavissa olevat versiot (kuva alla). Kun olet valinnut omaan koneeseesi sopivan version klikkaa tätä ja lataus alkaa välittömästi. Lataus vie noin 10 minuuttia.
 
 ![virtualbox download](images/vbd.jpg)
+
+Depianin latasin sivulta https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/ ja valitsin asennettavaksi debian-live-13.3.0-amd64-xfce.iso kurssin ohjeiden mukaisesti.
+
+## Virtuaalikoneen luonti
+
+Kun VirtualBox ja iso kuvake olivat latautuneet avasin VirtualBoxin ja klikkasin ikkunan yläreunasta "new". Tämän jälkeen nimesin virtuaalikoneen, valitsin ISO kuvakkeen, käyttöjärjestelmän tyypin (Linux) sekä version (Debian (64-bit)) ja laitoin rastin ruutuun "Skip Unattended Installation".
+Seuraavakis valitsin RAMin ja prosessoreiden määrän. RAMia laitoin 4096 MB ja prosessoreita valitsin 4. Sitten päätin vielä kovalevyn koon, minkä pistin 50 gigaan. Mitä enemmän RAMia, prosessoreita on ja mitä enemmän tilaa kovalevyllä on niin sitä tehokkaampi virtuaalikone on. Joten jos oma tietokoneesi on tehokas niin voi 
+virtuaalikoneestakin tehdä tehokkaamaan lisäämällä RAMin ja prosessoreiden määrä sekä tekemällä kovalevystä suuremman. 
+
+## Ensimmäinen käynnistys ja Debianin lataus
+
+Kun sain koneen speksit määriteltyä niin käynnistin sen ja valitsin päävalikosta "Live system (amd64)", joka on oletuksena valittu. Kun kone on käynnistyi työpöydälle, kokeilin, että verkko toimii ja sen jälkeen valitsin työpöydältä kuvakkeen "Install Debian".
+Kun olin klikannut kuvaketta niin pääsin valitsemaan kielen ja näppäimistön. Kieleksi valitsin "American English" ja näppäimistöksi "finnish". Kun olin nämä valinnut niin valitsin, että levy tyhjennetään täysin. Viimeisessä vaiheessa loin itselleni käyttäjän, sekä katsoin yhteenvedon läpi varmistaakseni, että kaikki oli niin kuin piti ja sitten klikkasin "install". Latauksessa meni minulla aikaa hieman alle 10 minuuttia. 
+
+## Ensimmäinen kirjautuminen
+
+Kirjautuminen tapahtui äskeisessä vaiheessa luoduilla tunnuksilla. Kun olin kirjautunut kokeilin uudestaan, että verkko toimii käyttämällä selainta ja vierailemalla jollakin sivustolla. Tämän jälkeen avasin terminaalin, työpöydän ala-laidasta ja aloin päivittämään konetta. Ensin ajoin komennon "sudo apt-get update" ja heti sen perään "sudo apt-get -y dist-upgrade". Nämä komennot kertovat koneelle, että mitä on ladattavissa ja jälkimmäinen komento päivittää
+kaikki ohjelmat. Sitten oli vielä asennettava palomuuri ja otettava se käyttöön. Tämä onnistui komeinnoilla "sudo apt-get -y install ufw" sekä "sudo ufw enable". Nyt oli enää käynnistettäv kone uusiksi, jotta päivitykset tulisivat voimaan. Tämän tein kommennolla "sudo reboot".
+
+Nyt kone oli valmiina käytettäväksi ja seuraavia tehtviä varten.
+
+## Lähteet
+Raportin ohjeet: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+VirtualBoxin lataus: https://www.virtualbox.org/wiki/Downloads
+Debianin lataus: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+Tehtävänanto ja ohjeet: https://terokarvinen.com/2021/install-debian-on-virtualbox/ & https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md

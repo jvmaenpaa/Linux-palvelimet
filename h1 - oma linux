@@ -1,0 +1,19 @@
+## Tehtävänanto
+
+Tehtävänä oli tarkoitus luoda uusi virtuaalikone ja asentaa siihen Linux Debian -käyttöjärjestelmä, ja kirjoittaa tehtävän etenemisestä raportti/ohje, jota muut Linuxia virtuaalikoneelle asentavat voivat seurata.
+
+## Tehtävän tekoon käytetty rauta
+
+- Emolevy: ROG STRIX Z790-E GAMING WIFI
+- Prosessori:	13th Gen Intel(R) Core(TM) i7-13700K, 3400 Mhz, 16 Core(s), 24 Logical Processor(s)
+- Muisti: Samsung SSD 980 PRO with Heatsink 2TB
+- Ram: Kingston 32GB (2 x 16GB) Fury Beast DDR5, 6000MHz, CL36, 1,
+- Näytönohjain: NVIDIA GeForce RTX 3080
+- Käyttöjärjestelmä: Microsoft Windows 11 Pro
+
+## VirtualBoxin ja Debianin lataaminen
+
+VirtualBoxin saa ladattua osoitteesta https://www.virtualbox.org/wiki/Downloads
+ja näytön vasemmassa reunassa näkyy ladattavissa olevat versiot (kuva alla). Kun olet valinnut omaan koneeseesi sopivan version klikkaa tätä ja lataus alkaa välittömästi. Lataus vie noin 10 minuuttia.
+
+

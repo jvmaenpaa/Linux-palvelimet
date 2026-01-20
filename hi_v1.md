@@ -60,16 +60,20 @@ Seuraavaksi olikin tehtyjen määritysten yhteenveto ja tarkastus, jonka jälkee
 
 <img width="1274" height="800" alt="Screenshot 2026-01-19 025430" src="https://github.com/user-attachments/assets/67cc9202-e13e-4bbf-a381-85c8bba2d86c" />
 
-<img width="939" height="837" alt="Screenshot 2026-01-19 025711" src="https://github.com/user-attachments/assets/4620fe3a-f32a-4f9f-85bf-ff05b7c4e4e5" />
+Asennuksen jälkeen ohjelma ilmoittaa kaiken olevan valmist ja käynnistyy uudestaan, kun klikkaat oikeasta alakulmasta kohtaa "Done". Uudellenkäynnistyken jälkeen kirjauduin koneeseen sisään äsken luomillani tunnuksilla. 
+Kun olin päässyt koneelle sisään testasin yhteydet uudelleen vierailemalla muutamilla verkkosivuilla, ja yhteydet toimivatkin niin kuin piti. 
+Testattuani yhteydet avasin terminaalin tyäpöydän alalaidasta. 
 
-<img width="672" height="750" alt="Screenshot 2026-01-19 025750" src="https://github.com/user-attachments/assets/28f4b214-549b-4aa9-9b70-8cf18443f235" />
+<img width="1277" height="874" alt="Screenshot 2026-01-19 024740" src="https://github.com/user-attachments/assets/f248c4db-7f00-4c80-9cb0-a76ac49f3cce" />
 
-<img width="787" height="478" alt="Screenshot 2026-01-19 030006" src="https://github.com/user-attachments/assets/6b727073-ff51-4405-b7d6-0a43f4bae9d2" />
+Tarkoituksena oli tarkistaa mitä päivityksiä oli saatavilla ja päivittää kaikki mahdollinen. Aloitin syöttämällä komennon `sudo apt-get update` , joka hakee saatavilla olevat päivitykset.
+!Huomio, että kun ajat sudo-komennon pyytää järjestelmä sinun salasanaasi. Salasana ei näy näytöllä vaan se syötetään "piilossa", joten älä säikähdä, jos näytölle ei tulostu tekstiä. 
 
-<img width="809" height="352" alt="Screenshot 2026-01-19 030025" src="https://github.com/user-attachments/assets/ab44029b-f6b6-43b9-9e38-30f37a7a8f19" />
+<img width="787" height="138" alt="Screenshot 2026-01-19 030006" src="https://github.com/user-attachments/assets/7f9b1063-dbcd-4c95-8a16-7170d25beb5f" />
 
-<img width="748" height="246" alt="Screenshot 2026-01-19 030209" src="https://github.com/user-attachments/assets/57d359f8-7766-448f-9c6d-e757194fd067" />
 
-<img width="635" height="170" alt="Screenshot 2026-01-19 030329" src="https://github.com/user-attachments/assets/12e4f679-d31e-4804-96b3-925ec11a1115" />
 
-<img width="488" height="45" alt="Screenshot 2026-01-19 030417" src="https://github.com/user-attachments/assets/1a6b7ced-e919-4fa0-90bc-ef25bbb168f2" />
+
+
+
+

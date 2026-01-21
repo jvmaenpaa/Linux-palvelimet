@@ -71,7 +71,8 @@ Tarkoituksena oli tarkistaa mitä päivityksiä oli saatavilla ja päivittää k
 
 <img width="787" height="138" alt="Screenshot 2026-01-19 030006" src="https://github.com/user-attachments/assets/7f9b1063-dbcd-4c95-8a16-7170d25beb5f" />
 
-! tähän loput päivitykseen tarkoitetut komennot !
+Kun kaikki päivitykset olivat haettu niin päivitin kaiken komennolla `sudo apt-get -y dist-upgrade` ja kun komento on ajettu sinulta kysytään haluatko tämän tehdä niin "Y" on kyllä niin valitse se.
+Sitten oli vielä asennettava palomuuri ja otettava se käyttöön. Tein sen komennoilla `sudo apt-get -y install ufw` (lataus) ja `sudo ufw enable` (käyttöön otto). Kun tämä oli tehty niin enää oli käynnistettävä kone uudestaan ja se olisi valmiina käytettäväksi. Uudelleen käynnistys tapahtuu komennolla `sudo reboot`.
 
 ## Ajurien asentaminen virtuaalikoneelle
 

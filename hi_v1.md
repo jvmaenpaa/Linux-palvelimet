@@ -71,6 +71,37 @@ Tarkoituksena oli tarkistaa mitä päivityksiä oli saatavilla ja päivittää k
 
 <img width="787" height="138" alt="Screenshot 2026-01-19 030006" src="https://github.com/user-attachments/assets/7f9b1063-dbcd-4c95-8a16-7170d25beb5f" />
 
+! tähän loput päivitykseen tarkoitetut komennot !
+
+## Ajurien asentaminen virtuaalikoneelle
+
+Käytettävyyden parantamiseksi asensin VirtualBox Guest Additions, eli ajurit, jotta saisin virtualikoneen virtuaalikoneen näytön skaalattua kokonäytölle. Ajurit tarjoavat myös paremman resoluution, ja saat muutenkin enemmän irti virtualisoinnista. 
+Aloitin asentamisen lataamalla joitakin tarvittavia paketteja, ajamalla seuraavat komennot terminaalissa `sudo apt update` ja `sudo apt install build-essential dkms linux-headers-$(uname -r)`. Tämän jälkeen avasin ikkunan yläreunasta kohdan "Devices" ja klikkasin kohtaa "Insert Guest Additions CD image...".
+<img width="596" height="312" alt="Screenshot 2026-01-21 141812" src="https://github.com/user-attachments/assets/273b19f8-5e60-427c-83e5-6087e37d41a3" />
+
+Heti tämän jälkeen sain alla olevan kuvan mukaisen virheilmoituksen. 
+
+<img width="380" height="327" alt="Screenshot 2026-01-21 141227" src="https://github.com/user-attachments/assets/b526795e-5182-409d-955b-66e504c45ecb" />
+
+Ihmettelin ensin, että mistä on kyse ja en tiennyt mitä tehdä. Kopion kuitenkin virheilmoituksen tiedot ja googlasin siinä toivossa, että löytäisin ratkaisun ongelmaan. Hetken selailtuani löysin ratkaisun (https://itslinuxfoss.com/unable-insert-virtual-optical-disk/) ja virheilmoituksen syyn mikä oli se, että toinen levy oli jo virtuaalilevyn paikalla. Korjaus oli helppo, eli tämä toinen virtuaalilevy oli vain poistettava koneelta. Tähän oli muutama tapa miten tämän olisi voinut tehdä, mutta poistin levyn itse VirtualBoxin konsolista. 
+
+<img width="965" height="554" alt="Screenshot 2026-01-21 141716" src="https://github.com/user-attachments/assets/8b58aec2-8927-4e68-bcef-40d0111b63a6" />
+
+Klikkasin hiiren oikealla painikkeella levyä ja avautui valikko, josta valitsin kohdan "Remove Disk from Virtual Drive", ja heti sen jälkeen ilmestyvästä ikkunasta kohdan "Force Unmount". Tämän jälkeen VirtualBox konsolissa pitäisi näkyä kohta "Optical Drive" tyhjänä. 
+
+<img width="478" height="134" alt="Screenshot 2026-01-21 141752" src="https://github.com/user-attachments/assets/d8f1f3b5-9899-452a-b63a-b29062e3fc14" />
+
+Sitten yritin lisätä Guest Addtionsis CD kuvan uudestaan kohdasta "Devices" niin kuin edellä ja se onnistui. Nyt oli tehtävä uusi hakemisto johon Guest Additions DC kuvan voisi kiinnittää, tämä onnistui kun ajoi seuraavat komennot terminaalissa: `sudo mkdir -p /mnt/cdrom` (hakemiston luonti) ja `sudo mount /dev/cdrom /mnt/cdrom` (kiinnitys). Sitten suunnistin juuri luomaani hakemistoon komennolla `cd /mnt/cdrom`ja ajoin kyseisen tiedoston komennolla `sudo ./VBoxLinuxAdditions.run`. Latauksessa kesti muutama minuutti ja sen jälkeen kone oli käynnistettävä uudestaan komennolla `sudo reboot`. Kun oli käynnistynyt uudestaan sain virtualikoneen "näytön" tai ikkunan näkymään koko näytölläni. 
+
+## Lähteet
+- Raportin ohjeet: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+- Tehtävänanto ja ohjeet: https://terokarvinen.com/2021/install-debian-on-virtualbox/ & https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
+- VirtualBoxin lataus: https://www.virtualbox.org/wiki/Downloads
+- Debianen lataus: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
+- VirtualBox Guest Additions: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest & https://www.techbloat.com/virtualboxs-guest-additions-what-they-are-and-how-to-install-them.html
+- VirtualBox Guest Addition Error: https://itslinuxfoss.com/unable-insert-virtual-optical-disk/
+
+
 
 
 

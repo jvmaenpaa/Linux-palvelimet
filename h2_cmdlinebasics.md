@@ -56,7 +56,7 @@ Käyttäjän hakemisto (/home/user/) sisältää käyttäjä kohtaiset konfigura
 
 <img width="743" height="57" alt="image" src="https://github.com/user-attachments/assets/22dcb0a0-7570-4a8c-a1b8-d4dd97aadfe0" />
 
-## d) The Friendly M
+## d) Grep
 
 Grep-komentoa käytetään, kun halutaan etsiä tiettyä tekstiä teksti tiedostoista. Tein alla olevan tiedoston autot.txt polkuun /home/jonim/Documents/autot.txt, ja esittelen muutaman tavan käyttää grep komentoa sen avulla.
 

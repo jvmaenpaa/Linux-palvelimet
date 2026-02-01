@@ -24,7 +24,7 @@ Lokiin pääsi käsiksi komennolla `sudo tail -f /var/log/apache2/access.log`. T
 8. "http//localhost/?C=N;O=A", kertoo sivun miltä pyyntä on tullut.
 9. "Mozilla/5.0 (X11; Linux x86:64: rc:140.0) Gecko/20100101 Firefox/140.0", user-agent string, joka tunnistaa selaimen ja käyttöjärjestelmän.
 
-##c) Etusivu uusiksi
+## c) Etusivu uusiksi
 
 Aloitin luomalla hakemiston komennolla `mkdir -p /home/jonim/publicsites/hattu, jonne tulen myöhemmin hattu.example.com html sivun. 
 Sen jälkeen loin VirtualHost-tiedoston ja lisäsin sinne määritykset. 

@@ -29,6 +29,9 @@ Lokiin pääsi käsiksi komennolla `sudo tail -f /var/log/apache2/access.log`. T
 Aloitin luomalla hakemiston komennolla `mkdir -p /home/jonim/publicsites/hattu, jonne tulen myöhemmin hattu.example.com html sivun. 
 Sen jälkeen loin VirtualHost-tiedoston ja lisäsin sinne määritykset. 
 
+<img width="1292" height="238" alt="Screenshot 2026-02-02 004035" src="https://github.com/user-attachments/assets/dc7b66f3-4b05-4d0e-8b10-4fbefbcfd4c4" />
+
+
 !Tässä kohtaa sain AH00094 errorin enkä saanut sitä selvitettyä tehtävän palautus aikaan mennessä!
 
 

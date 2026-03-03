@@ -1,0 +1,7 @@
+## x) 
+   [Artikkeli 1](https://letsencrypt.org/how-it-works/)
+     - Let´s Encryptin ja ACME protokollan tarkoitus on määrittää HTTPS palvelin ja saada se automaattisesti hankkimaan selain-luotettuja sertifikaatteja.
+        - Ensin toimialue on validoitava, jotta ACME-client voi hoitaa serfikaatti hallintaa validoitulle toimialueelle
+        - Serfitikaatin myöntäminen ja peruuttaminen toimii tämän jälkeen CSR:n avulla, jotka pyytävän Let´s Encryptiltä sertifikaatin myöntämistä tai peruuttamista.
+[Artikkeli 2](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
+    - 

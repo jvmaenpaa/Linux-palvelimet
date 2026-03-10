@@ -34,4 +34,8 @@ Sen jälkeen loin VirtualHost-tiedoston ja lisäsin sinne määritykset.
 
 !Tässä kohtaa sain AH00094 errorin enkä saanut sitä selvitettyä tehtävän palautus aikaan mennessä!
 
+## Lähteet
+https://terokarvinen.com/linux-palvelimet/#h3-hello-web-server
+https://httpd.apache.org/docs/2.4/vhosts/name-based.html
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
 
